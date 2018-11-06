@@ -1,0 +1,37 @@
+% A (minimal) template for problem sets and solutions using the exam document class
+
+% Organization:
+%% Define new commands, macros, etc. in macros.tex
+%% Anything that you would put before \begin{document} should go in prelude.tex
+
+%% For multiple psets, each should get its own file to \input into main with a \section{}
+
+\documentclass[answers]{exam}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[ruled,longend]{algorithm2e}
+\graphicspath{ {./images/} }
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+
+\title{HW Template}
+\begin{document}
+
+\input{macros}
+
+%% Content goes here
+
+\section*{Problem 1}
+\input{problem1}
+\pagebreak
+
+\section*{Problem 2}
+\input{problem2}
+\pagebreak
+
+\end{document}
